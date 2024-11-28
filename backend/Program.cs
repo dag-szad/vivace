@@ -29,13 +29,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-// Endpoint do pobierania książek z bazy danych
-app.MapGet("/books", async (IDbConnection dbConnection) =>
-{
-    var query = "SELECT * FROM Books";  // Zmieniamy na swoją tabelę
-    var result = await dbConnection.QueryAsync(query);  // Używamy Dappera do pobrania danych z bazy
-    return Results.Ok(result);  // Zwracamy dane w formacie JSON
-});
+// Endpoint do pobierania książek z bazy danych (funkcje przeniesione do backend/Endpoints)
+app.MapBookEndpoints();
 
 // Uruchom aplikację
 app.Run();
