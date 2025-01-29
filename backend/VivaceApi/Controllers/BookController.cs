@@ -1,11 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using BlazorServerApp.Data;
-using BlazorServerApp.Models;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+using VivaceApi.Models;
+using VivaceApi.Data;
 
-namespace BlazorServerApp.Controllers
+namespace VivaceApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
@@ -22,7 +20,21 @@ namespace BlazorServerApp.Controllers
         [HttpGet]
         public async Task<IActionResult> GetBooks()
         {
-            var books = await _context.Books.ToListAsync();
+            var books = await _context.Books
+                .Select(b => new
+                {
+                    b.BookId,
+                    b.Title,
+                    b.Author,
+                    b.Price,
+                    b.Stock,
+                    b.Publisher,
+                    b.Year,
+                    b.Genre,
+                    BookURL = string.IsNullOrEmpty(b.BookURL) ? "No cover" : b.BookURL
+                })
+                .ToListAsync();
+
             return Ok(books);
         }
 

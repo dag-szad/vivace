@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using BlazorServerApp.Models;
+using VivaceApi.Models;
 
-namespace BlazorServerApp.Data
+namespace VivaceApi.Data
 {
     public class ApplicationDbContext : DbContext
     {
@@ -11,5 +11,6 @@ namespace BlazorServerApp.Data
         }
 
         public DbSet<Book> Books { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }
