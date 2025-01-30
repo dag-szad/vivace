@@ -5,6 +5,7 @@ import ProfileButton from '../ProfileButton/ProfileButton';
 import SearchInput from '../SearchBar/SearchBar';
 import BottomMenu from '../BottomMenu/DropdownCategory';
 import Baner from '../Baner';
+import Book from '../Book';
 
 
 const HomePage: React.FC = () => {
@@ -40,69 +41,13 @@ const HomePage: React.FC = () => {
             <Baner />
         </div>
 
-        <h2 className='text-xl font-semibold ml-3 mt-4'>Sprawdź również</h2>
-        <main className='flex'>
-            <div className="bg-[#322d34] w-[135px] h-[230px] p-3 m-3 rounded-lg shadow-lg flex justify-between text-white">
-                <div className="bg-gray-600 w-[115] h-[115]">
-
-                </div>
-            </div>
-            <div className="bg-[#322d34] w-[135px] h-[230px] p-3 m-3 rounded-lg shadow-lg flex justify-between text-white">
-            <div className="bg-gray-600 w-[115] h-[115]">
-                    
-                </div>
-            </div>
-            <div className="bg-[#322d34] w-[135px] h-[230px] p-3 m-3 rounded-lg shadow-lg flex justify-between text-white">
-                <div className="bg-gray-600 w-[115] h-[115]">
-                    
-                </div>
-            </div>
-            <div className="bg-[#322d34] w-[135px] h-[230px] p-3 m-3 rounded-lg shadow-lg flex justify-between text-white">
-                <div className="bg-gray-600 w-[115] h-[115]">
-
-                </div>
-            </div>
-            <div className="bg-[#322d34] w-[135px] h-[230px] p-3 m-3 rounded-lg shadow-lg flex justify-between text-white">
-                <div className="bg-gray-600 w-[115] h-[115]">
-                    
-                </div>
-            </div>
-            <div className="bg-[#322d34] w-[135px] h-[230px] p-3 m-3 rounded-lg shadow-lg flex justify-between text-white">
-                <div className="bg-gray-600 w-[115] h-[115]">
-                    
-                </div>
-            </div>
-            <div className="bg-[#322d34] w-[135px] h-[230px] p-3 m-3 rounded-lg shadow-lg flex justify-between text-white">
-                <div className="bg-gray-600 w-[115] h-[115]">
-                    
-                </div>
-            </div>
-            <div className="bg-[#322d34] w-[135px] h-[230px] p-3 m-3 rounded-lg shadow-lg flex justify-between text-white">
-                <div className="bg-gray-600 w-[115] h-[115]">
-                    
-                </div>
-            </div>
-            <div className="bg-[#322d34] w-[135px] h-[230px] p-3 m-3 rounded-lg shadow-lg flex justify-between text-white">
-                <div className="bg-gray-600 w-[115] h-[115]">
-                    
-                </div>
-            </div>
-            <div className="bg-[#322d34] w-[135px] h-[230px] p-3 m-3 rounded-lg shadow-lg flex justify-between text-white">
-                <div className="bg-gray-600 w-[115] h-[115]">
-                    
-                </div>
-            </div>
-            <div className="bg-[#322d34] w-[135px] h-[230px] p-3 m-3 rounded-lg shadow-lg flex justify-between text-white">
-                <div className="bg-gray-600 w-[115] h-[115]">
-                    
-                </div>
-            </div>
-            <div className="bg-[#322d34] w-[135px] h-[230px] p-3 m-3 rounded-lg shadow-lg flex justify-between text-white">
-                <div className="bg-gray-600 w-[115] h-[115]">
-                    
-                </div>
-            </div>
-        </main>
+      <h2 className="ml-3 mt-4 text-xl font-semibold">Sprawdź również</h2>
+      <main className="flex">
+        <Book id="2" />
+        <Book id="1" />
+        <Book id="3" />
+        <Book id="7" />
+      </main>
 
 
         <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
@@ -152,7 +97,6 @@ const HomePage: React.FC = () => {
             Go to nextjs.org →
           </a>
         </footer>
-
     </div>
   );
 };
