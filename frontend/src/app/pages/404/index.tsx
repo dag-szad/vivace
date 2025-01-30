@@ -1,1 +1,0 @@
-/* Zrobię 404 stronkę ten plik możecie olać narazie */

@@ -2,8 +2,9 @@ import React from 'react';
 import Image from 'next/image';
 import CartButton from '../CartButton/CartButton';
 import ProfileButton from '../ProfileButton/ProfileButton';
-import SearchInput from '../SearchInput/SearchInput';
+import SearchInput from '../SearchBar/SearchBar';
 import BottomMenu from '../BottomMenu/DropdownCategory';
+import Baner from '../Baner';
 
 
 const HomePage: React.FC = () => {
@@ -35,49 +36,8 @@ const HomePage: React.FC = () => {
           </div>
        </nav>
 
-        <div className="m-1 font-serif ">
-            <div className='flex items-center justify-center'>
-                {/* Blok nr 1 */}
-                <div className="bg-[#362328] w-4/12 h-96 m-2 flex overflow-auto rounded-3xl">
-                    <div className='bg-gray-600 w-64 h-4/5 m-6'>
-                        {/* <Image> wtedy ten szary blok się wywali </Image> */}
-                    </div>
-
-                        <div className='m-5 text-white w-80 h-4/5'>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-                            and more recently with desktop
-                        </div>
-                </div>
-                {/* Blok nr 2 */}
-                <div className="bg-[#362328] w-4/12 h-96 m-2 flex overflow-auto rounded-3xl">              
-                    <div className='bg-gray-600 w-64 h-4/5 m-6'>
-                        {/* <Image> wtedy ten szary blok się wywali </Image> */}
-                    </div>
-                        <div className='m-5 text-white w-80 h-4/5'>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-                            and more recently with desktop
-                        </div>
-                </div>
-                {/* Blok nr 3 */}
-                <div className="bg-[#362328] w-4/12 h-96 m-2 flex overflow-auto rounded-3xl">
-                    <div className='bg-gray-600 w-64 h-4/5 m-6'>
-                        {/* <Image> wtedy ten szary blok się wywali </Image> */}
-                    </div>
-                        <div className='m-5 text-white w-80 h-4/5'>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-                            and more recently with desktop
-                        </div>
-                </div>
-            </div>
+        <div>
+            <Baner />
         </div>
 
         <h2 className='text-xl font-semibold ml-3 mt-4'>Sprawdź również</h2>

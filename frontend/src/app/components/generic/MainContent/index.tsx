@@ -1,1 +1,0 @@
-//tutaj myśle by potem przenieść dane z home page by strona się szybciej ładowała
