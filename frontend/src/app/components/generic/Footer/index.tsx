@@ -1,1 +1,0 @@
-//tutaj potem przenieść footer by było bardziej czytelnie

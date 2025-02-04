@@ -1,10 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.EntityFrameworkCore;
-using VivaceApi.Models;
 using VivaceApi.Data;
-using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,21 +15,29 @@ builder.Services.AddCors(options =>
     });
 });
 
-// Obsługa Swaggera
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllOrigins", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Połączenie z bazą danych
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(connectionString));
+var booksFilePath = Path.Combine(builder.Environment.ContentRootPath, "Data", "Books.json");
+var cartFilePath = Path.Combine(builder.Environment.ContentRootPath, "Data", "Cart.json");
 
-// Obsługa kontrolerów Blazora
+builder.Services.AddSingleton(new BookDataContext(booksFilePath));
+builder.Services.AddSingleton(new CartDataContext(cartFilePath));
+
 builder.Services.AddControllers();
 
 var app = builder.Build();
 
-// Włączenie Swaggera
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -42,9 +47,6 @@ if (app.Environment.IsDevelopment())
 // Włączenie CORS przed `UseRouting()`
 app.UseCors("AllowAllOrigins");
 
-// Middleware dla Razor Pages i Blazor
 app.UseRouting();
 app.MapControllers();
-
-// Uruchom aplikację
 app.Run();

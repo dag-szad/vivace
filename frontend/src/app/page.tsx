@@ -1,4 +1,4 @@
-import HomePage from "./components/generic/HomePage/homePage";
+import HomePage from "./components/generic/HomePage";
 const Page: React.FC = () => {
   return <HomePage />;
 };
