@@ -29,11 +29,11 @@ const BottomMenu = () => {
 
     return (
         <div className="relative ">
-          <button className="z-50 gap-2 px-20 py-2 m-1 bg-[#362328] rounded" onClick={toggleDropdown}>
+          <button className="z-50 gap-2 px-20 py-2 m-1  rounded" onClick={toggleDropdown}>
             Kategoria {isOpen ? "▲" : "▼"}
           </button>
           {isOpen && (
-            <ul className="absolute top-full mt-2 border border-yellow-300 bg-[#362328] rounded shadow-lg z-50">
+            <ul className="absolute top-full mt-2 border   rounded shadow-lg z-50">
               {categories.map((category, index) => (
                 <li
                   key={index}
@@ -45,10 +45,10 @@ const BottomMenu = () => {
               ))}
             </ul>
           )}
-          <button className="p-2 m-1 px-20 bg-[#362328] border-yellow-300 rounded "> Bestsellery </button>
-          <button className="p-2 m-1 px-20 bg-[#362328] border-yellow-300 rounded "> Nowości </button>
-          <button className="p-2 m-1 px-20 bg-[#362328] border-yellow-300 rounded "> Zapowiedzi </button>
-          <button className="p-2 m-1 px-20 bg-[#362328] border-yellow-300 rounded "> Promocje </button>
+          <button className="p-2 m-1 px-20  rounded "> Bestsellery </button>
+          <button className="p-2 m-1 px-20  rounded "> Nowości </button>
+          <button className="p-2 m-1 px-20  rounded "> Zapowiedzi </button>
+          <button className="p-2 m-1 px-20  rounded "> Promocje </button>
         </div>
       );
     };
