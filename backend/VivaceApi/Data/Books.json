@@ -41,7 +41,7 @@
       "publisher": "Bloomsbury",
       "year": 1997,
       "genre": "Fantasy",
-      "bookURL": "https://raw.githubusercontent.com/Kszube/book_covers/main/Harry%20Potter%20and%20the%20Sorcerers%20Stone.jpg"
+      "bookURL": ""
     },
     {
       "bookId": 5,
@@ -118,7 +118,7 @@
       "publisher": "Wydawnictwo MG",
       "year": 1866,
       "genre": "Classic",
-      "bookURL": "https://raw.githubusercontent.com/Kszube/book_covers/main/Zbrodnia%20i%20kara.jpg"
+      "bookURL": ""
     },
     {
       "bookId": 12,
@@ -140,7 +140,7 @@
       "publisher": "Wydawnictwo Czytelnik",
       "year": 1967,
       "genre": "Classic",
-      "bookURL": "https://raw.githubusercontent.com/Kszube/book_covers/main/Mistrz%20i%20Malgorzata.jpg"
+      "bookURL": ""
     },
     {
       "bookId": 14,
@@ -184,7 +184,7 @@
       "publisher": "Wydawnictwo Krítona",
       "year": 1967,
       "genre": "Classic",
-      "bookURL": "https://raw.githubusercontent.com/Kszube/book_covers/main/Sto%20lat%20samotnosci.jpg"
+      "bookURL": ""
     },
     {
       "bookId": 18,
@@ -206,7 +206,7 @@
       "publisher": "Wydawnictwo Rebis",
       "year": 1925,
       "genre": "Classic",
-      "bookURL": "https://raw.githubusercontent.com/Kszube/book_covers/main/Wielki%20Gatsby.jpg"
+      "bookURL": ""
     },
     {
       "bookId": 20,
@@ -217,7 +217,7 @@
       "publisher": "Wydawnictwo Zysk i S-ka",
       "year": 1950,
       "genre": "Fantasy",
-      "bookURL": "https://raw.githubusercontent.com/Kszube/book_covers/main/Kroniki%20Narnii%20Lew%20czarownica%20i%20stara%20szafa.jpg"
+      "bookURL": ""
     },
     {
         "bookId": 21,
@@ -294,7 +294,7 @@
         "publisher": "Wydawnictwo WAB",
         "year": 1813,
         "genre": "Classic",
-        "bookURL": "https://raw.githubusercontent.com/Kszube/book_covers/main/Duma%20i%20uprzedzenie.jpg"
+        "bookURL": ""
     },
     {
         "bookId": 28,
@@ -338,7 +338,7 @@
         "publisher": "Wydawnictwo Czarne",
         "year": 2005,
         "genre": "Fantasy",
-        "bookURL": "https://raw.githubusercontent.com/Kszube/book_covers/main/Bledny%20rycerz.jpg"
+        "bookURL": ""
     },
     {
         "bookId": 32,
@@ -349,7 +349,7 @@
         "publisher": "Wydawnictwo Świat Książki",
         "year": 2001,
         "genre": "Mystery",
-        "bookURL": "https://raw.githubusercontent.com/Kszube/book_covers/main/Cien%20wiatru.jpg"
+        "bookURL": ""
     },
     {
         "bookId": 33,
@@ -360,7 +360,7 @@
         "publisher": "Wydawnictwo Vocatio",
         "year": 2007,
         "genre": "Fiction",
-        "bookURL": "No cover"
+        "bookURL": ""
     },
     {
         "bookId": 34,
@@ -371,7 +371,7 @@
         "publisher": "Wydawnictwo WAB",
         "year": 1813,
         "genre": "Classic",
-        "bookURL": "https://raw.githubusercontent.com/Kszube/book_covers/main/Duma%20i%20uprzedzenie.jpg"
+        "bookURL": ""
     },
     {
         "bookId": 35,
@@ -404,7 +404,7 @@
         "publisher": "Wydawnictwo PIW",
         "year": 1898,
         "genre": "Science fiction",
-        "bookURL": "https://raw.githubusercontent.com/Kszube/book_covers/main/Wojna%20swiatów.jpg"
+        "bookURL": ""
     },
     {
         "bookId": 38,
@@ -415,7 +415,7 @@
         "publisher": "Wydawnictwo Mag",
         "year": 1990,
         "genre": "Science fiction",
-        "bookURL": "No cover"
+        "bookURL": ""
     },
     {
         "bookId": 39,
@@ -448,7 +448,7 @@
         "publisher": "Wydawnictwo Nasza Ksiegarnia",
         "year": 2005,
         "genre": "Historical Fiction",
-        "bookURL": "https://raw.githubusercontent.com/Kszube/book_covers/main/Zlodziejka%20ksiazek.jpg"
+        "bookURL": ""
     },
     {
         "bookId": 42,
@@ -459,7 +459,7 @@
         "publisher": "Wydawnictwo Znak",
         "year": 1973,
         "genre": "Historical Fiction",
-        "bookURL": "https://raw.githubusercontent.com/Kszube/book_covers/main/Smierc%20pieknych%20saren.jpg"
+        "bookURL": ""
     },
     {
         "bookId": 43,
@@ -492,7 +492,7 @@
         "publisher": "Wydawnictwo Znak",
         "year": 2007,
         "genre": "Drama",
-        "bookURL": "https://raw.githubusercontent.com/Kszube/book_covers/main/Sierpien%20w%20hrabstwie%20Osage.jpg"
+        "bookURL": ""
     },
     {
         "bookId": 46,
@@ -503,7 +503,7 @@
         "publisher": "Wydawnictwo PIW",
         "year": 1899,
         "genre": "Historical Fiction",
-        "bookURL": "https://raw.githubusercontent.com/Kszube/book_covers/main/Czas%20Apokalipsy.jpg"
+        "bookURL": ""
     },
     {
         "bookId": 47,
@@ -525,7 +525,7 @@
         "publisher": "Wydawnictwo Amber",
         "year": 2009,
         "genre": "Fantasy",
-        "bookURL": "https://raw.githubusercontent.com/Kszube/book_covers/main/Skrzydla.jpg"
+        "bookURL": ""
     },
     {
         "bookId": 49,
@@ -536,7 +536,7 @@
         "publisher": "Wydawnictwo Albatros",
         "year": 2009,
         "genre": "Thriller",
-        "bookURL": "https://raw.githubusercontent.com/Kszube/book_covers/main/Zamiana.jpg"
+        "bookURL": ""
     },
     {
         "bookId": 50,
@@ -580,7 +580,7 @@
         "publisher": "Wydawnictwo Marginesy",
         "year": 2018,
         "genre": "Mystery",
-        "bookURL": "https://raw.githubusercontent.com/Kszube/book_covers/main/Kobieta%20w%20oknie.jpg"
+        "bookURL": ""
     },
     {
         "bookId": 54,
@@ -602,7 +602,7 @@
         "publisher": "Wydawnictwo Zysk i S-ka",
         "year": 1954,
         "genre": "Fantasy",
-        "bookURL": "https://raw.githubusercontent.com/Kszube/book_covers/main/Wladca%20Pierscieni%20Druzyna%20Pierscienia.jpg"
+        "bookURL": ""
     },
     {
         "bookId": 56,
@@ -613,7 +613,7 @@
         "publisher": "Wydawnictwo Amber",
         "year": 2003,
         "genre": "Fiction",
-        "bookURL": "https://raw.githubusercontent.com/Kszube/book_covers/main/Piec%20osób%20które%20spotkasz%20w%20niebie.jpg"
+        "bookURL": ""
     },
     {
         "bookId": 57,
@@ -635,7 +635,7 @@
         "publisher": "Wydawnictwo Znak",
         "year": 2011,
         "genre": "Biography",
-        "bookURL": "https://raw.githubusercontent.com/Kszube/book_covers/main/Kocham%20cie%2C%20skarbie.jpg"
+        "bookURL": ""
     },
     {
         "bookId": 59,
@@ -646,7 +646,7 @@
         "publisher": "Wydawnictwo Rebis",
         "year": 2007,
         "genre": "Mystery",
-        "bookURL": "https://raw.githubusercontent.com/Kszube/book_covers/main/Skradziona%20przeszlosc.jpg"
+        "bookURL": ""
     },
     {
         "bookId": 60,
