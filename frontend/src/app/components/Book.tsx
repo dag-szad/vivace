@@ -1,5 +1,4 @@
 'use client';
-
 import React, { useEffect, useState } from 'react';
 
 type BookProps = {
@@ -30,8 +29,9 @@ const Book: React.FC<BookProps> = ({ id }) => {
           ...data,
           price: data.price ?? Math.floor(Math.random() * 41) + 20,
           bookURL:
-            data.bookURL ??
-            'https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg',
+            data.bookURL && data.bookURL.trim() !== ''
+              ? data.bookURL
+              : 'https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg',
         });
       })
       .catch((err) => setError(err.message));
@@ -42,13 +42,7 @@ const Book: React.FC<BookProps> = ({ id }) => {
 
   return (
     <div>
-      <img
-        src={book.bookURL
-          .replace('github.com', 'raw.githubusercontent.com')
-          .replace('/blob/', '/')}
-        alt={book.title}
-        width={150}
-      />
+      <img src={book.bookURL} alt={book.title} width={150} />
       <h2>{book.title}</h2>
       <p>Autor: {book.author}</p>
       <p>Cena: {book.price} zł</p>
