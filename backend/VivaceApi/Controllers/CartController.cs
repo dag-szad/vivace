@@ -5,7 +5,7 @@ using VivaceApi.Models;
 namespace VivaceApi.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/Cart")]
     public class CartController : ControllerBase
     {
         private readonly CartDataContext _cartContext;
@@ -31,8 +31,8 @@ namespace VivaceApi.Controllers
             return Ok(cartWithDetails);
         }
 
-        // Dodawanie książki
         [HttpPost]
+        [Route("/api/CartAdd")]
         public IActionResult AddToCart([FromBody] CartItem cartItem)
         {
             var book = _bookContext.Books.FirstOrDefault(b => b.BookId == cartItem.BookId);
