@@ -15,12 +15,12 @@ const HomePage: React.FC = () => {
 
   return (
     <div>
-      <header>
-        <span>Vivace</span>
+      <header className="flex justify-center items-center m-5"> 
+        <span className='italic font-bold text-xl text-gray-200'>Vivace</span>
         <div className="flex items-center justify-center">
           <DropdownCategory onCategorySelect={handleCategorySelect} />
         </div>
-        <div>
+        <div className='bg-gray-200 p-3 rounded-lg'>
           <CartButton />
         </div>
       </header>

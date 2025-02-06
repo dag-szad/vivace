@@ -45,7 +45,7 @@ const DropdownCategory: React.FC<DropdownCategoryProps> = ({
         Kategoria {isOpen ? '▲' : '▼'}
       </button>
       {isOpen && (
-        <ul className="absolute top-full z-50 mt-2 rounded border shadow-lg">
+        <ul className="absolute top-full z-50 mt-2 rounded border shadow-lg bg-gray-900">
           {categories.map((category, index) => (
             <li
               key={index}

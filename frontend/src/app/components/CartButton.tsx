@@ -4,8 +4,8 @@ import Link from 'next/link';
 
 const CartButton: React.FC = () => {
   return (
-    <Link href="/cart">
-      <Image src="/carticon.png" alt="cart" width={70} height={70} />
+    <Link href="/cart" className='bg-gray-200'>
+      <Image src="/carticon.png" alt="cart" width={30} height={30} />
     </Link>
   );
 };
