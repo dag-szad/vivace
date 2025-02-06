@@ -41,11 +41,11 @@ const Book: React.FC<BookProps> = ({ id }) => {
   if (!book) return <p>Ładowanie...</p>;
 
   return (
-    <div>
-      <img src={book.bookURL} alt={book.title} width={150} />
-      <h2>{book.title}</h2>
-      <p>Autor: {book.author}</p>
-      <p>Cena: {book.price} zł</p>
+    <div className='flex flex-col gap-2 w-48'>
+      <img src={book.bookURL} alt={book.title} className='w-48 h-64 object-fill rounded'/>
+      <h2 className='text-lg font-semibold'>{book.title}</h2>
+      <p className='italic'>{book.author}</p>
+      <p className='font-semibold'>{book.price} zł</p>
     </div>
   );
 };

@@ -45,11 +45,11 @@ const DropdownCategory: React.FC<DropdownCategoryProps> = ({
         Kategoria {isOpen ? '▲' : '▼'}
       </button>
       {isOpen && (
-        <ul className="absolute top-full z-50 mt-2 rounded border shadow-lg bg-gray-900">
+        <ul className="absolute top-full z-50 mt-2 rounded border shadow-lg bg-[#3e3840]">
           {categories.map((category, index) => (
             <li
               key={index}
-              className="flex cursor-pointer gap-2 py-2 pr-2 text-white"
+              className="flex cursor-pointer gap-2 py-2 pr-2 text-white hover:bg-[#4d3355]"
               onClick={() => handleCategorySelect(category.name)}
             >
               <span className="icon">{category.icon}</span>

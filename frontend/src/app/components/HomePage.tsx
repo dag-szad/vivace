@@ -16,7 +16,7 @@ const HomePage: React.FC = () => {
   return (
     <div>
       <header className="flex justify-center items-center m-5"> 
-        <span className='italic font-bold text-xl text-gray-200'>Vivace</span>
+        <span className='italic font-bold text-3xl text-gray-200 font-serif'>Vivace</span>
         <div className="flex items-center justify-center">
           <DropdownCategory onCategorySelect={handleCategorySelect} />
         </div>
@@ -28,20 +28,20 @@ const HomePage: React.FC = () => {
       <main>
         {selectedCategory ? (
           <div>
-            <h2 id="bestsellers" className="ml-3 mt-4 text-xl font-semibold">
+            <h2 className="m-5 text-2xl font-semibold">
               {selectedCategory}
             </h2>
             <CategoryBooks category={selectedCategory} />
           </div>
         ) : (
           <>
-            <h2 id="bestsellers" className="ml-3 mt-4 text-xl font-semibold">
+            <h2 className="m-5 text-2xl font-semibold">
               Polecane
             </h2>
             <RandomBooks />
           </>
         )}
-        <h2 id="bestsellers" className="ml-3 mt-4 text-xl font-semibold">
+        <h2 id="bestsellers" className="m-5 text-2xl font-semibold">
           Bestsellery
         </h2>
         <RandomBooks />

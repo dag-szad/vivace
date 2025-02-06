@@ -49,8 +49,7 @@ const CategoryBooks: React.FC<CategoryBooksProps> = ({ category }) => {
 
   return (
     <div>
-      <h2 className="ml-3 mt-4 text-xl font-semibold">Kategoria: {category}</h2>
-      <div className="flex flex-row flex-wrap">
+      <div className="flex gap-5 justify-center flex-wrap">
         {books.map((book) => (
           <div key={book.bookId} className="flex">
             <Book id={book.bookId.toString()} />

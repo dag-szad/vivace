@@ -19,7 +19,7 @@ const RandomBooks: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex">
+    <div className="flex gap-5 justify-center">
       {bookIds.map((id) => (
         <Book key={id} id={id.toString()} />
       ))}
