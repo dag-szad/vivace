@@ -1,5 +1,6 @@
 'use client';
 import React, { useEffect, useState } from 'react';
+import AddToCartButton from './AddToCart';
 
 type BookProps = {
   id: string;
@@ -41,11 +42,16 @@ const Book: React.FC<BookProps> = ({ id }) => {
   if (!book) return <p>Ładowanie...</p>;
 
   return (
-    <div className='flex flex-col gap-2 w-48'>
-      <img src={book.bookURL} alt={book.title} className='w-48 h-64 object-fill rounded'/>
-      <h2 className='text-lg font-semibold'>{book.title}</h2>
-      <p className='italic'>{book.author}</p>
-      <p className='font-semibold'>{book.price} zł</p>
+    <div className="flex w-48 flex-col gap-2">
+      <img
+        src={book.bookURL}
+        alt={book.title}
+        className="h-64 w-48 rounded object-fill"
+      />
+      <h2 className="text-lg font-semibold">{book.title}</h2>
+      <p className="italic">{book.author}</p>
+      <p className="font-semibold">{book.price} zł</p>
+      <AddToCartButton bookId={parseInt(id)} />
     </div>
   );
 };
