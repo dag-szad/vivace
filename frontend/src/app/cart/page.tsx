@@ -1,6 +1,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import { fetchf } from 'fetchff';
+import Link from 'next/link';
 interface CartItem {
   book: BookData;
   quantity: number;
@@ -66,8 +67,17 @@ const Cart: React.FC = () => {
     return <p>Ładowanie...</p>;
   }
 
-  if (!cartItems) {
-    return <p>Nie ma nic w koszyku.</p>;
+  if (!cartItems || cartItems.length === 0) {
+    return (
+      <div>
+        <p>Nie ma nic w koszyku.</p>
+        <Link href="/">
+          <button className="rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-700">
+            Wróć do strony sklepu
+          </button>
+        </Link>
+      </div>
+    );
   }
 
   return (
