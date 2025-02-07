@@ -31,9 +31,9 @@ const AddToCartButton: React.FC<{ bookId: number }> = ({ bookId }) => {
     <button
       onClick={handleAddToCart}
       disabled={loading}
-      className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
+      className="p-[10px] bg-[#3e3840] text-white rounded hover:bg-[#4d3355]"
     >
-      {loading ? 'Adding...' : 'Add to Cart'}
+      {loading ? 'Dodawanie...' : 'Dodaj do koszyka'}
     </button>
   );
 };
